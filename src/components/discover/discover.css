@@ -1,0 +1,116 @@
+.discover-page {
+  display: flex;
+  height: 82vh;
+  flex-direction: column;
+  align-items: center;
+}
+
+.track-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+}
+
+.img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.track-info img{
+  width: 450px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.discover-title {
+  margin-top: 15px;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 9px!important;
+}
+
+.discover-artist {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.discover-actions {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.trigger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 90px;
+  border-radius: 100px;
+  background-color: #f5f5f5;
+  font-size: 42px;
+  color: #E81C62;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 2px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.playpause {
+  font-size: 74px;
+  color: #1ca7e8;
+  margin: 0 30px;
+}
+
+@media (max-width:1000px) {
+  .track-info img {
+    width: 400px;
+  }
+}
+
+@media (max-width:450px) {
+  .trigger {
+    width: 70px;
+    height: 70px;
+    font-size: 34px;
+  }
+
+  .playpause {
+    font-size: 50px;
+  }
+
+  .discover-title {
+    font-size: 21px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  
+  .discover-artist {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .img-container {
+    width: 100%;
+    position: relative;
+  }
+
+  .img-container:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%; /* The padding depends on the width, not on the height, so with a padding-bottom of 100% you will get a square */
+  }
+
+  .img-container img{
+
+  position: absolute; /* Take your picture out of the flow */
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; /* Make the picture taking the size of it's parent */
+  width: 100%; /* This if for the object-fit */
+  height: 100%; /* This if for the object-fit */
+  object-fit: cover; /* Equivalent of the background-size: cover; of a background-image */
+  object-position: center;
+  }
+}

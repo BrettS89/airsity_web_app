@@ -1,0 +1,90 @@
+.account-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.account-content-container {
+  /* height: 100%; */
+}
+
+.account-content-container h2{
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.account-loggedin-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.account-privacy-policy {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 0 15px;
+  border: 2px solid #1ca7e8;
+  color: #1ca7e8;
+  width: 500px;
+  height: 50px;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+.account-signup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #E81C62;
+  color: #E81C62;
+  width: 500px;
+  height: 50px;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+.account-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #1ca7e8;
+  color: #1ca7e8;
+  width: 500px;
+  height: 50px;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+.account-or {
+  font-size: 15px;
+  margin: 10px auto;
+  font-weight: 700;
+  text-align: center;
+}
+
+@media (max-width: 450px) {
+  .account-content-container {
+    width: 90%;
+  }
+
+  .account-signup {
+    width: 100%;
+  }
+
+  .account-login {
+    width: 100%;
+  }
+
+  .account-privacy-policy {
+    width: 100%;
+  }
+
+  .account-login {
+    width: 100%;
+  }
+}

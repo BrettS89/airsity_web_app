@@ -1,3 +1,7 @@
+/* primary: #1ca7e8 */
+/* secondary: #E81C62 */
+
+
 body {
   margin: 0;
   padding: 0;
@@ -6,9 +10,34 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: 'Muli', sans-serif;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  /* font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace; */
+}
+
+button {
+  text-decoration: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+.myButton {
+  padding: 8px 20px;
+  font-weight: 700;
+  background-color: #fff;
+  color: #E81C62;
+  border: 2px solid #E81C62;
+  border-radius: 5px;
+  display: block;
+}
+
+.myButton:hover {
+  cursor: pointer;
+  background-color: #E81C62;
+  color: #fff;
 }

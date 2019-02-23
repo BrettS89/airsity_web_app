@@ -1,0 +1,74 @@
+nav {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  background-color: #fff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 75px;
+  align-items: center;
+  width: 90%;
+  z-index: 100;
+}
+
+.nav-logo {
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: .5px;
+}
+
+.header-genre {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 65px;
+  background-color: #1ca7e8;
+  color: #fff;
+  padding: 1.5px 10px;
+  border-radius: 500px;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.fa-music {
+  color: #E81C62;
+}
+
+.playlist-dropdown {
+  display: flex;
+  align-items: center;
+  justify-content: center!important;
+  text-align: center!important;
+  background-color: #1ca7e8;
+  color: #fff!important;
+  padding: 1.5px 10px;
+  border-radius: 500px;
+  font-size: 12px;
+  font-weight: 700;
+  /* color: #1ca7e8!important; */
+  margin-right: 8px;
+  width: 90px;
+}
+
+
+@media (max-width:650px) {
+  .nav-logo {
+    font-size: 30px;
+  }
+}
+
+@media (max-width:450px) {
+  .navbar {
+    height: 53px;
+  }
+
+  .nav-logo {
+    font-size: 21px;
+  }
+}

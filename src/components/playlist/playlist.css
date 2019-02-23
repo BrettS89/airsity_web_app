@@ -1,0 +1,36 @@
+.playlist-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.song-card {
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  font-size: 13px;
+}
+
+.song-card-content {
+  display: flex;
+  align-items: center;
+}
+
+.song-card-content img {
+  height: 75px;
+  width: 75px;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.song-card-title {
+  font-weight: 700;
+}
+
+@media (max-width:450px) {
+  .song-card {
+    width: 90%;
+  }
+}
