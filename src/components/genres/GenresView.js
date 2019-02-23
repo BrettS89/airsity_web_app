@@ -12,7 +12,7 @@ export default props => {
             onClick={() => props.setGenre({ value: 'hiphop', display: 'hip hop' })}
           >
             <span>Hip hop</span>
-            <i class="fas fa-chevron-right"></i>
+            <i className="fas fa-chevron-right"></i>
           </div>
 
           <div 
@@ -20,7 +20,7 @@ export default props => {
             onClick={() => props.setGenre({ value: 'pop', display: 'pop' })}
           >
             <span>Pop</span>
-            <i class="fas fa-chevron-right"></i>
+            <i className="fas fa-chevron-right"></i>
           </div>
 
           <div 
@@ -28,7 +28,7 @@ export default props => {
             onClick={() => props.setGenre({ value: 'edm', display: 'edm' })}
           >
             <span>EDM</span>
-            <i class="fas fa-chevron-right"></i>
+            <i className="fas fa-chevron-right"></i>
           </div>
         </div>
 

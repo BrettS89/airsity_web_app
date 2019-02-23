@@ -1,7 +1,6 @@
 import React from 'react';
 import './discover.css';
 import DiscoverView from './DiscoverView';
-import { apiIsLoggedIn } from '../../lib/apiCalls';
 
 class Discover extends React.Component {
   constructor(props) {

@@ -9,17 +9,18 @@ export default props => {
           <div>
             <div className="account-privacy-policy" onClick={() => props.navigateTo('privacypolicy')}>
               <span>Privacy policy</span>
-              <i class="fas fa-chevron-right"></i>
+              <i className="fas fa-chevron-right"></i>
             </div>
 
             <div className="account-privacy-policy" onClick={() => props.navigateTo('termsandconditions')}>
               <span>Terms and conditions</span>
-              <i class="fas fa-chevron-right"></i>
+              <i className="fas fa-chevron-right"></i>
             </div>
           </div>
 
           <div className="account-privacy-policy" onClick={props.logout}>
             <span>Log out</span>
+            <i className="fas fa-sign-out-alt"></i>
           </div>
 
         </div>
