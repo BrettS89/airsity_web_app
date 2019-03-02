@@ -18,8 +18,6 @@ class Playlist extends React.Component {
 
   async componentDidMount() {
     const { status } = await apiIsLoggedIn();
-    console.log(status);
-    // const { isLoggedIn } = this.props.state; 
     this.props.setPage('playlist');
     if (status) {
       this.props.getPlaylist(this.state.genre);
