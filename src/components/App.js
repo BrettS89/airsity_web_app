@@ -9,12 +9,16 @@ class App extends React.Component {
   componentDidMount() {
     this.props.isLoggedIn();
   }
-  
+
+  setTopPadding = () => {
+    return this.props.state.page === 'home' ? { paddingTop: '2.5vh' } : {};
+  };
+
   render () {
     return (
       <React.Fragment>
       <Header/>
-        <div className="body">
+        <div className="body" style={this.setTopPadding()}>
           <Routing />
         </div>
       </React.Fragment>
@@ -22,4 +26,10 @@ class App extends React.Component {
   }
 };
 
-export default connect(null, { isLoggedIn })(App);
+const mapStateToProps = state => ({
+  state: {
+    page: state.nav,
+  },
+});
+
+export default connect(mapStateToProps, { isLoggedIn })(App);

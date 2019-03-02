@@ -32,7 +32,6 @@ export default React.forwardRef((props, ref) => {
         </div>
       </div>
       
-
       <audio ref={ref} src={props.songs.length > 0 ? props.songs[0].audio : ''} loop />
 
     </div>

@@ -9,6 +9,7 @@ import Account from '../containers/account';
 import Footer from '../containers/footer';
 import PrivacyPolicy from '../components/PrivacyPolicy';
 import TermsAndConditions from '../components/TC';
+import Landing from '../containers/landing';
 
 export default () => {
   return (
@@ -22,7 +23,8 @@ export default () => {
           <Route path="/playlist" component={Playlist} />
           <Route path="/discover" component={Discover} />
           <Route path="/signup" component={Signup} />
-          <Route path="/" component={Login} />
+          <Route path="/login" component={Login} />
+          <Route path="/" component={Landing} />
         </Switch>
         <Footer />
       </React.Fragment>

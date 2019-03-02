@@ -23,6 +23,13 @@ nav {
   letter-spacing: .5px;
 }
 
+.nav-logo2 {
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: .5px;
+}
+
+
 .header-genre {
   display: flex;
   align-items: center;

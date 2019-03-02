@@ -28,9 +28,9 @@ export default props => {
   };
 
   return (
-    <nav>
+    <nav style={{ display: props.page === 'home' ? 'none' : 'flex' }}>
       <nav className="navbar">
-        <div className="nav-logo"><i className="fas fa-music"></i> Airsity</div>
+        <div className="nav-logo" onClick={props.goHome}><i className="fas fa-music"></i> Airsity</div>
         {renderGenre()}
       </nav>
     </nav>
