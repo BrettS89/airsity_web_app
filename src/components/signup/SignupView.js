@@ -2,6 +2,12 @@ import React from 'react';
 import { Input } from 'semantic-ui-react'
 
 export default props => {
+  const renderSignupError = () => {
+    if (props.error) {
+      return <span className="signup-error">A signup error occured</span>;
+    }
+  };
+
   return (
     <div className="signup-page">
       <div className="signup-container">
@@ -15,7 +21,7 @@ export default props => {
 
         <div className="mobile-header">
           <div className="mobile-h-text">
-            Discover New Nusic Fast
+            Discover New Music Fast
           </div>
         </div>
 
@@ -39,6 +45,7 @@ export default props => {
             <button className="myButton signup-button" type="submit">
               Let's go!
             </button>
+            {renderSignupError()}
           </form>
         </div>
       </div>

@@ -6,10 +6,12 @@ export default props => {
     { text: 'All genres', value: 'all' },
     { text: 'Hip hop', value: 'hiphop' },
     { text: 'Pop', value: 'pop' },
+    { text: 'EDM', value: 'edm' },
   ];
 
   const getPlaylist = (e, data) => {
-    props.getPlaylist(data.value);
+    props.setPlaylistGenre(data.value);
+    props.getPlaylist({ genre: data.value, date: Date.now() });
   };
 
   const renderGenre = () => {

@@ -73,6 +73,11 @@
   margin-top: 28px!important;
   display: block!important;
   width: 100%;
+  margin-bottom: 10px;
+}
+
+.signup-error {
+  color: #E81C62;
 }
 
 @media (max-width:640px) {

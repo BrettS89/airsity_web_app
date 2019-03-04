@@ -1,7 +1,7 @@
 import Header from '../components/header';
 import { connect } from 'react-redux';
 import { bindActionCreators } from '../../node_modules/redux';
-import { getPlaylist } from '../store/actions/playlistActions';
+import { getPlaylist, setPlaylistGenre } from '../store/actions/playlistActions';
 
 const mapStateToProps = state => {
   return {
@@ -17,6 +17,7 @@ const mapDispatchToProps = dispatch => {
   return bindActionCreators(
     {
       getPlaylist,
+      setPlaylistGenre
     },
     dispatch,
   );

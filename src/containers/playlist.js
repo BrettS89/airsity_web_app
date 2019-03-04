@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import { bindActionCreators } from '../../node_modules/redux';
 import Playlist from '../components/playlist';
-import { getPlaylist } from '../store/actions/playlistActions';
+import { getPlaylist, getPlaylistScroll } from '../store/actions/playlistActions';
 import { setPage } from '../store/actions/navActions';
 
 const mapStateToProps = state => {
@@ -17,6 +17,7 @@ const mapDispatchToProps = dispatch => {
   return bindActionCreators(
     {
       getPlaylist,
+      getPlaylistScroll,
       setPage
     },
     dispatch

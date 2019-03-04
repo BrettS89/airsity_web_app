@@ -9,6 +9,7 @@ class Header extends React.Component {
             isLoggedIn={this.props.state.auth}
             page={this.props.state.nav}
             getPlaylist={this.props.getPlaylist}
+            setPlaylistGenre={this.props.setPlaylistGenre}
             goHome={() => this.props.history.push('/')}
             />;
   }

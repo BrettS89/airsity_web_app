@@ -15,6 +15,8 @@ export const SET_GENRE = 'SET_GENRE';
 // Playlist types
 export const ADD_TO_PLAYLIST = 'ADD_TO_PLAYLIST';
 export const GET_PLAYLIST = 'GET_PLAYLIST';
+export const GET_PLAYLIST_SCROLL = 'GET_PLAYLIST_SCROLL';
+export const SET_PLAYLIST_GENRE = 'SET_PLAYLIST_GENRE';
 
 // Listened types
 export const ADD_TO_LISTENED = 'ADD_TO_LISTENED';

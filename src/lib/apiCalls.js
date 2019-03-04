@@ -92,10 +92,10 @@ export const apiAddToListened = async body => {
 };
 
 // Get playlist
-export const apiGetPlaylist = async genre => {
+export const apiGetPlaylist = async params => {
   try {
     const config = getToken();
-    const { data } = await axios.get(`${URI}/playlist/get/${genre}`, config);
+    const { data } = await axios.get(`${URI}/playlist/get/${params.genre}/${params.date}`, config);
     return data;
   } catch(e) {
     return false;
